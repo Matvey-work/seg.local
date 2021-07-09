@@ -50,12 +50,19 @@ add_theme_support( 'custom-header', array(
 function my_widgets(){
 	register_sidebar( array(
 		'name' => 'виджеты',
-		'id' => 'my-widjets',
+		'id' => 'my_widjets',
 		'description' => 'Выводиться в выбранном месте сайта.',
-		'before_widget' => '<li class="widget-block">',
-		'after_widget' => '</li>',
-		'before_title' => '<h2 class="widgettitle">',
-		'after_title' => '</h2>',
+		'before_widget' => '<a class="widget-block">',
+		'after_widget' => '</a>',
+		'before_title' => '<p class="widgettitle">',
+		'after_title' => '</p>',
 	) );
 }
 add_action( 'widgets_init', 'my_widgets' );
+
+function render_template($path, $data = []){
+  set_query_var('variables', $data);
+  get_template_part($path);
+}
+
+

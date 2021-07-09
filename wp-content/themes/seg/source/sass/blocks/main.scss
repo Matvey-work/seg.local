@@ -20,6 +20,11 @@ main {
   &-data-org {
     max-width: 833px;
 
+    &:not(:first-child) {
+      margin-top: 50px;
+    }
+
+
     &--general {
       margin-top: 50px;
     }
@@ -45,6 +50,7 @@ main {
   margin-right: 30px;
   margin-bottom: 30px;
   min-width: 760px;
+  max-width: 820px;
   // padding: 45px;
   position: relative;
 
@@ -100,15 +106,20 @@ main {
 }
 
 .data-org-link {
-  // justify-content: stretch;
+  justify-content: stretch;
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  text-align: start;
   & span {
     padding-left: 10px;
     padding-right: 10px;
     color: #FF0000;
   }
+}
+
+.main-title-data-org {
+  justify-content: center;
 }
 
 .navigation {
@@ -1399,7 +1410,8 @@ main {
 }
 
 .consist__title {
-  display: block;
+  display: flex;
+  text-align: center;
   width: 85%;
 
   & span {
@@ -1520,44 +1532,45 @@ main {
   border-right: 2px solid #1D1D1D;
 }
 
-.complete {
-  & .resource-bottom-block {
-    & .colls-block-right {
-      display: flex;
+// .complete {
+//   & .resource-bottom-block {
+//     & .colls-block-right {
+//       display: flex;
 
-      & .wrap-right {
-        width: auto;
-      }
+//       & .wrap-right {
+//         width: auto;
+//       }
 
-      & .row-right-top {
-        width: 363px;
-        border-bottom: none;
-      }
+//       & .row-right-top {
+//         width: 363px;
+//         border-bottom: none;
+//       }
 
-      & .row-right-bottom {
-        border-top: 1px solid #1D1D1D;
-        width: 53px;
-      }
+//       & .row-right-bottom {
+//         border-top: 1px solid #1D1D1D;
+//         width: 53px;
+//       }
 
-      & .row-right {
-        width: 100%;
+//       & .row-right {
+//         width: 100%;
 
-        &-two {
-          border-bottom: none;
-        }
-      }
+//         &-two {
+//           border-bottom: none;
+//         }
+//       }
 
-      & .cell-two {
-        width: 100%;
-        border-right: none;
-        margin: 6px;
-      }
-    }
-  }
-}
+//       & .cell-two {
+//         width: 100%;
+//         border-right: none;
+//         margin: 6px;
+//       }
+//     }
+//   }
+// }
 
 .complete__title {
   width: 95%;
+  text-align: center;
 }
 
 .complete__region {
@@ -1710,6 +1723,7 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: #f3f3f3;
+  // position: relative;
 
   cursor: url("/wp-content/themes/seg/bw_main.cur"), default;
 

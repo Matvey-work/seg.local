@@ -1,11 +1,11 @@
 <?php
 /**
- * Template Name: Нижний блок
+ * Template Name: нижний блок
  */
 
-$custom_fields = get_post_meta($post->ID);
 
-// echo "<pre>",var_dump($custom_fields),"</pre>";
+
+// echo "<pre>",var_dump($variables),"</pre>";
 ?>
 
 

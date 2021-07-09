@@ -62,7 +62,7 @@ $custom_fields = get_post_meta($post->ID);
 
           </div>
 
-          <div class="resource-bottom-block">
+          <!-- <div class="resource-bottom-block">
             <div class="colls-block-left">
               <div class="row-left row-left-one">
                 <div class="cell-one"></div>
@@ -165,7 +165,9 @@ $custom_fields = get_post_meta($post->ID);
 
               </div>
             </div>
-          </div>
+          </div> -->
+
+          <?   render_template('template/bottom-block', compact('custom_fields')); ?>
         </div>
       </div>
 
@@ -198,7 +200,9 @@ $custom_fields = get_post_meta($post->ID);
 
           </div>
 
-          <div class="resource-bottom-block resource-bottom-block-sp">
+
+          <?   render_template('template/bottom-block', compact('custom_fields')); ?>
+          <!-- <div class="resource-bottom-block resource-bottom-block-sp">
             <div class="colls-block-left">
               <div class="row-left row-left-one">
                 <div class="cell-one"></div>
@@ -301,7 +305,7 @@ $custom_fields = get_post_meta($post->ID);
 
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
 
@@ -334,7 +338,7 @@ $custom_fields = get_post_meta($post->ID);
 
           </div>
 
-          <div class="resource-bottom-block resource-bottom-block-consist">
+          <!-- <div class="resource-bottom-block">
             <div class="colls-block-left">
               <div class="row-left row-left-one">
                 <div class="cell-one"></div>
@@ -363,25 +367,83 @@ $custom_fields = get_post_meta($post->ID);
                 <div class="cell-six">Дата</div>
               </div>
 
+              <div class="row-left row-left-four">
+                <div class="cell-one"><p>Разработал</p></div>
+                <div class="cell-two"><p>Соломатин</p></div>
+                <div class="cell-three">
+                  <img src="<?= get_template_directory_uri() ?>/build/img/solomatin.png" alt="">
+                </div>
+                <div class="cell-four"><p>10.01.21</p></div>
+              </div>
+
+              <div class="row-left row-left-five">
+                <div class="cell-one"><p>Проверил</p></div>
+                <div class="cell-two"><p>Иващенко</p></div>
+                <div class="cell-three">
+                  <img src="<?= get_template_directory_uri() ?>/build/img/ivashenko.png" alt="">
+                </div>
+                <div class="cell-four"><p>10.01.21</p></div>
+              </div>
+
+              <div class="row-left row-left-six">
+                <div class="cell-one"></div>
+                <div class="cell-two"></div>
+                <div class="cell-three"></div>
+                <div class="cell-four"></div>
+              </div>
+
+              <div class="row-left row-left-seven">
+                <div class="cell-one"><p>Н. контр</p></div>
+                <div class="cell-two"><p>Круглов</p></div>
+                <div class="cell-three">
+                  <img src="<?= get_template_directory_uri() ?>/build/img/kruglov.png" alt="">
+                </div>
+                <div class="cell-four"><p>10.01.21</p></div>
+              </div>
+
+              <div class="row-left row-left-eight">
+                <div class="cell-one"><p>ГИП</p></div>
+                <div class="cell-two"><p>Семенякин</p></div>
+                <div class="cell-three">
+                  <img src="<?= get_template_directory_uri() ?>/build/img/semenakin.png" alt="">
+                </div>
+                <div class="cell-four"><p>10.01.21</p></div>
+              </div>
+
             </div>
             <div class="colls-block-right">
               <div class="row-right-top">
-                <p>2021.<span>SEG</span> №1.СP</p>
+                <p>2021.<span>SEG</span> №1.СР</p>
               </div>
               <div class="row-right-bottom">
+                <div class="wrap-left">
+                  <p>Состав работ, выполняемых разработчиком</p>
+                </div>
 
                 <div class="wrap-right">
                   <div class="row-right row-right-one">
+                    <div class="cell-one"><p>Стадия</p></div>
                     <div class="cell-two"><p>Лист</p></div>
+                    <div class="cell-three"><p>Листов</p></div>
                   </div>
+
                   <div class="row-right row-right-two">
-                    <div class="cell-two">3</div>
+                    <div class="cell-one">П</div>
+                    <div class="cell-two">1</div>
+                    <div class="cell-three">3</div>
                   </div>
+
+                  <div class="block-logo">
+                    <a href="/"><span>SEG</span> №1</a>
+                  </div>
+
                 </div>
 
               </div>
             </div>
-          </div>
+          </div> -->
+
+          <?   render_template('template/bottom-block', compact('custom_fields')); ?>
         </div>
       </div>
 

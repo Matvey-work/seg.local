@@ -30,7 +30,7 @@ $custom_fields = get_post_meta($post->ID);
     <div class="container">
         <div class="main__wrap main__wrap-data-org">
           <div class="main__doc main__doc-data-org">
-            <h1 class="resource-link data-org-link">
+            <h1 class="resource-link data-org-link main-title-data-org">
               Контакты Разработчика
             </h1>
 
@@ -45,7 +45,7 @@ $custom_fields = get_post_meta($post->ID);
 
             </div>
 
-            <div class="resource-bottom-block">
+            <!-- <div class="resource-bottom-block">
               <div class="colls-block-left">
                 <div class="row-left row-left-one">
                   <div class="cell-one"></div>
@@ -147,8 +147,11 @@ $custom_fields = get_post_meta($post->ID);
 
                 </div>
               </div>
-            </div>
+            </div> -->
 
+
+            <?   render_template('template/bottom-block', compact('custom_fields')); ?>
+            
             <div class="block-left">
               <div class="top">
                 <p class="top-text t1">Инв. № подл.</p>
