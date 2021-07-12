@@ -1,8 +1,9 @@
 <?php
 
 /**
- * Template Name: шаблон проекта
+ * Template Name: навигация проекта
  */
+
 
 $custom_fields = get_post_meta($post->ID);
 
@@ -23,7 +24,6 @@ $custom_fields = get_post_meta($post->ID);
 
 ?>
 
-<?php get_header(); ?>
 
 
         <div class="main__wrap main__wrap-data-org">
