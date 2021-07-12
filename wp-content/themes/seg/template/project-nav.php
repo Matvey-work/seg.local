@@ -5,7 +5,8 @@
  */
 
 
-$custom_fields = get_post_meta($post->ID);
+$custom_fields = $variables["custom_fields"];
+$child_page = $variables["child_page"];
 
 // $resultArr = [];
 
@@ -20,7 +21,7 @@ $custom_fields = get_post_meta($post->ID);
 //   ];
 // }
 
-// echo "<pre>",var_dump($custom_fields),"</pre>";
+// echo "<pre>",var_dump($variables),"</pre>";
 
 ?>
 
@@ -41,7 +42,7 @@ $custom_fields = get_post_meta($post->ID);
 
             </div>
 
-            <?   render_template('template/bottom-block', compact('custom_fields')); ?>
+            <? render_template('template/bottom-block', compact('custom_fields', 'child_page')); ?>
 
 
 

@@ -3,9 +3,14 @@
  * Template Name: нижний блок
  */
 
+$custom_fields = $variables["custom_fields"];
+$child_page = $variables["child_page"];
 
+$list = $variables['list'];
 
-// echo "<pre>",var_dump($variables),"</pre>";
+$page_num = $list['num_page'];
+
+// echo "<pre>",var_dump($list),"</pre>";
 ?>
 
 
@@ -87,8 +92,9 @@
                 </div>
                 <div class="row-right-bottom">
                   <div class="wrap-left">
-                    <p>Сведения о выполненных
-                      проектах разработчиком</p>
+                      <p>
+                        <? the_title(); ?>
+                      </p>
                   </div>
 
                   <div class="wrap-right">
@@ -100,8 +106,8 @@
 
                     <div class="row-right row-right-two">
                       <div class="cell-one">П</div>
-                      <div class="cell-two">1</div>
-                      <div class="cell-three">2</div>
+                      <div class="cell-two"><?= $page_num+1 ?></div>
+                      <div class="cell-three"><?= count($child_page)+1 ?></div>
                     </div>
 
                     <div class="block-logo">

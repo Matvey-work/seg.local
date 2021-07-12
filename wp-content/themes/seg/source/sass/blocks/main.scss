@@ -1646,12 +1646,70 @@ main {
 }
 
 .project-build {
+  border: 2px solid #1D1D1D;
+  & h3 {
+    font-family: "Open Sans", sans-serif;
+    // font-size: 16px;
+    // line-height: 22px;
+    color: #1d1d1d;
+    margin-left: 20px;
+  }
+
+  & p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1d1d1d;
+    margin-left: 20px;
+  }
+
   & .complete__region-title {
     max-width: 95%;
   }
 
   & .complete__project-table {
     margin-bottom: 70px;
+  }
+
+  & .block-left p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  & .wp-block-table table {
+    border: 2px solid #1D1D1D;
+    border-collapse: collapse;
+
+    & td {
+      border: 1px solid #1D1D1D;
+      text-align: center;
+      padding: 5px;
+      min-width: 33px;
+    }
+
+  }
+
+  & .colls-block-left .row-left p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  & .colls-block-right .row-right-top p {
+    margin-left: 0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  & .wrap-left p {
+    margin-left: 0;
   }
 }
 

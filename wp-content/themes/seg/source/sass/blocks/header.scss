@@ -5,6 +5,22 @@
   top: 18vh;
   left: 28.5vw;
   z-index: 10;
+
+  @media (min-width: 2000px) {
+    left: 34vw;
+  }
+
+  @media (max-width: 1450px) {
+    left: 21.5vw;
+  }
+
+  @media (max-width: 1025px) {
+    left: 10.5vw;
+  }
+
+  @media (max-width: 769px) {
+    left: 9.5vw;
+  }
 }
 
 .list-icons {
