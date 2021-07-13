@@ -36,7 +36,9 @@ $child_page = $variables["child_page"];
               <?php for ($i = 0; $i < $custom_fields["project_nav"][0]; $i++): ?>
                 <div class="data-org__nav-item">
                   <span class="data-org__nav-count"><?= $custom_fields["project_nav_". $i ."_poryadkovyj_nomer"][0];?></span>
-                  <a href="<?= $custom_fields["project_nav_". $i ."_url"][0];?>" class="data-org__nav-link"><?= $custom_fields["project_nav_". $i ."_text_link"][0];?></a><span class="data-org__nav-link-page"><?= $custom_fields["project_nav_". $i ."_num_page"][0];?></span>
+                  <? $yacor = str_replace([".", " "], "", $custom_fields["project_nav_". $i ."_poryadkovyj_nomer"][0]) ?>
+
+                  <a href="#par<?= $yacor ?>" class="data-org__nav-link"><?= $custom_fields["project_nav_". $i ."_text_link"][0];?></a><span class="data-org__nav-link-page"><?= $custom_fields["project_nav_". $i ."_num_page"][0];?></span>
                 </div>
               <?php endfor; ?>
 

@@ -66,6 +66,10 @@ main {
   &-data-org {
     min-width: 710px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 990px;
 
     & .block-left {
       width: 340px;
@@ -77,6 +81,14 @@ main {
     & .resource-bottom-block {
       margin-bottom: 0;
       margin-right: -2px;
+
+      & .colls-block-right .wrap-left p {
+        font-family: "Open Sans",sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+      }
     }
   }
 }
@@ -1440,6 +1452,7 @@ main {
 .consist__wrap {
   margin-top: 30px;
 
+
   & .resource-bottom-block-consist {
     margin-top: 440px;
 
@@ -1647,6 +1660,11 @@ main {
 
 .project-build {
   border: 2px solid #1D1D1D;
+  min-height: 930px;
+  // max-height: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   & h3 {
     font-family: "Open Sans", sans-serif;
@@ -1654,6 +1672,7 @@ main {
     line-height: 27px;
     color: #055786;
     margin-left: 20px;
+    margin-right: 5px;
   }
 
   & p {
@@ -1662,6 +1681,7 @@ main {
     line-height: 22px;
     color: #1d1d1d;
     margin-left: 20px;
+    margin-right: 5px;
   }
 
   & .complete__region-title {
@@ -1679,6 +1699,7 @@ main {
     line-height: 19px;
     text-align: center;
     margin-left: 0;
+    margin-right: 0;
   }
 
   & .wp-block-table table {
@@ -1708,6 +1729,7 @@ main {
 
   & .colls-block-right .row-right-top p {
     margin-left: 0;
+    margin-right: 0;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
@@ -1717,6 +1739,7 @@ main {
   & .wrap-left p {
     margin-left: 0;
   }
+
 }
 
 .project-build__text {

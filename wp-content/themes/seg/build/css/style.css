@@ -476,7 +476,11 @@ main {
   position: relative; }
   .main__doc-data-org {
     min-width: 710px;
-    position: relative; }
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 990px; }
     .main__doc-data-org .block-left {
       width: 340px;
       left: -205px;
@@ -484,6 +488,12 @@ main {
     .main__doc-data-org .resource-bottom-block {
       margin-bottom: 0;
       margin-right: -2px; }
+      .main__doc-data-org .resource-bottom-block .colls-block-right .wrap-left p {
+        font-family: "Open Sans",sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center; }
 
 .main__doc-resource {
   border: 2.5px solid #1D1D1D;
@@ -1322,19 +1332,25 @@ main {
   color: #1D1D1D; }
 
 .project-build {
-  border: 2px solid #1D1D1D; }
+  border: 2px solid #1D1D1D;
+  min-height: 930px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   .project-build h3 {
     font-family: "Open Sans", sans-serif;
     font-size: 22px;
     line-height: 27px;
     color: #055786;
-    margin-left: 20px; }
+    margin-left: 20px;
+    margin-right: 5px; }
   .project-build p {
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     line-height: 22px;
     color: #1d1d1d;
-    margin-left: 20px; }
+    margin-left: 20px;
+    margin-right: 5px; }
   .project-build .complete__region-title {
     max-width: 95%; }
   .project-build .complete__project-table {
@@ -1345,7 +1361,8 @@ main {
     font-size: 14px;
     line-height: 19px;
     text-align: center;
-    margin-left: 0; }
+    margin-left: 0;
+    margin-right: 0; }
   .project-build .wp-block-table table {
     border: 2px solid #1D1D1D;
     border-collapse: collapse; }
@@ -1366,6 +1383,7 @@ main {
     line-height: 16px; }
   .project-build .colls-block-right .row-right-top p {
     margin-left: 0;
+    margin-right: 0;
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
