@@ -1647,11 +1647,12 @@ main {
 
 .project-build {
   border: 2px solid #1D1D1D;
+
   & h3 {
     font-family: "Open Sans", sans-serif;
-    // font-size: 16px;
-    // line-height: 22px;
-    color: #1d1d1d;
+    font-size: 22px;
+    line-height: 27px;
+    color: #055786;
     margin-left: 20px;
   }
 
@@ -1685,6 +1686,11 @@ main {
     border-collapse: collapse;
 
     & td {
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
       border: 1px solid #1D1D1D;
       text-align: center;
       padding: 5px;

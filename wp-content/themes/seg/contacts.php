@@ -45,7 +45,7 @@ $custom_fields = get_post_meta($post->ID);
 
             </div>
 
-            <!-- <div class="resource-bottom-block">
+            <div class="resource-bottom-block">
               <div class="colls-block-left">
                 <div class="row-left row-left-one">
                   <div class="cell-one"></div>
@@ -147,11 +147,11 @@ $custom_fields = get_post_meta($post->ID);
 
                 </div>
               </div>
-            </div> -->
+            </div>
 
 
-            <?   render_template('template/bottom-block', compact('custom_fields')); ?>
-            
+            <?  // render_template('template/bottom-block', compact('custom_fields')); ?>
+
             <div class="block-left">
               <div class="top">
                 <p class="top-text t1">Инв. № подл.</p>

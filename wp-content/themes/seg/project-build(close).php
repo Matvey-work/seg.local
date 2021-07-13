@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Template Name: проект организации строительства
+ * Template Name: проект
  */
 
 $custom_fields = get_post_meta($post->ID);

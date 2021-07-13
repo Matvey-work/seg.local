@@ -20,7 +20,8 @@ $custom_fields = get_post_meta($post->ID);
 // }
 
 // echo "<pre>",var_dump($custom_fields),"</pre>";
-
+$list_num = 1;
+$num = 3;
 ?>
 
 <?php get_header(); ?>
@@ -167,7 +168,7 @@ $custom_fields = get_post_meta($post->ID);
             </div>
           </div> -->
 
-          <?   render_template('template/bottom-block', compact('custom_fields')); ?>
+          <?   render_template('template/bottom-block', compact('custom_fields', 'list_num', 'num')); ?>
         </div>
       </div>
 
@@ -200,8 +201,8 @@ $custom_fields = get_post_meta($post->ID);
 
           </div>
 
-
-          <?   render_template('template/bottom-block', compact('custom_fields')); ?>
+                 <? $list_num = 2; ?>
+          <?   render_template('template/bottom-block', compact('custom_fields', 'list_num', 'num')); ?>
           <!-- <div class="resource-bottom-block resource-bottom-block-sp">
             <div class="colls-block-left">
               <div class="row-left row-left-one">
@@ -442,8 +443,8 @@ $custom_fields = get_post_meta($post->ID);
               </div>
             </div>
           </div> -->
-
-          <?   render_template('template/bottom-block', compact('custom_fields')); ?>
+                 <? $list_num = 3; ?>
+          <?   render_template('template/bottom-block', compact('custom_fields', 'list_num', 'num')); ?>
         </div>
       </div>
 

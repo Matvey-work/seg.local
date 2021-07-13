@@ -5,6 +5,8 @@
 
 $custom_fields = $variables["custom_fields"];
 $child_page = $variables["child_page"];
+$num = $variables["num"];
+$list_num = $variables['list_num'];
 
 $list = $variables['list'];
 
@@ -106,8 +108,8 @@ $page_num = $list['num_page'];
 
                     <div class="row-right row-right-two">
                       <div class="cell-one">П</div>
-                      <div class="cell-two"><?= $page_num+1 ?></div>
-                      <div class="cell-three"><?= count($child_page)+1 ?></div>
+                      <div class="cell-two"><?= $list_num ?? $page_num+1 ?></div>
+                      <div class="cell-three"><?= $num ?? count($child_page)+1 ?></div>
                     </div>
 
                     <div class="block-logo">
