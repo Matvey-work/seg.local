@@ -7,6 +7,7 @@
 
 $custom_fields = $variables["custom_fields"];
 $child_page = $variables["child_page"];
+$name_pril = $variables['name_pril'];
 
 // $resultArr = [];
 
@@ -44,7 +45,7 @@ $child_page = $variables["child_page"];
 
             </div>
 
-            <? render_template('template/bottom-block', compact('custom_fields', 'child_page')); ?>
+            <? render_template('template/bottom-block', compact('custom_fields', 'child_page', 'name_pril')); ?>
 
 
 

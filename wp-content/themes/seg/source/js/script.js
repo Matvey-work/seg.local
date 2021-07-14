@@ -1,7 +1,17 @@
+function yacor(){
+  let links = $('.data-org__nav-link');
+  let titles = $('.mini-title');
+
+  titles.each(function(index, value){
+    let ids = $(links[index]).attr('href').replace("#", "");
+    $(value).attr('id', ids);
+  })
+
+}
 
 
 $(document).ready(function(){
-
+  yacor();
     $('.modal-box-slider').slick({
       // centerMode: true,
       slidesToShow: 3,
@@ -40,6 +50,7 @@ $(document).ready(function(){
       $(this).toggleClass("zoom", current.ratio == 3);
 
   });
+
 
 
 

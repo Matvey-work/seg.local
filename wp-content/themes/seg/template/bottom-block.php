@@ -7,12 +7,12 @@ $custom_fields = $variables["custom_fields"];
 $child_page = $variables["child_page"];
 $num = $variables["num"];
 $list_num = $variables['list_num'];
-
+$name_pril = $variables['name_pril'];
 $list = $variables['list'];
-
+$nazvanie_razdela = $custom_fields["nazvanie_razdela"][0];
 $page_num = $list['num_page'];
 
-// echo "<pre>",var_dump($list),"</pre>";
+// echo "<pre>",var_dump($name_pril),"</pre>";
 ?>
 
 
@@ -90,7 +90,9 @@ $page_num = $list['num_page'];
               </div>
               <div class="colls-block-right">
                 <div class="row-right-top">
-                  <p>2021.<span>SEG</span> №1.PЛ</p>
+                  <!-- <p>2021.<span>SEG</span> №1.PЛ</p> -->
+
+                  <p><?= $nazvanie_razdela ?? $name_pril ?></p>
                 </div>
                 <div class="row-right-bottom">
                   <div class="wrap-left">

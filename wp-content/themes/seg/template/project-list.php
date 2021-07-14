@@ -7,7 +7,7 @@
 $custom_fields = $variables["custom_fields"];
 $child_page = $variables["child_page"];
 $list = $variables['list'];
-
+$name_pril = $variables['name_pril'];
 //  echo "<pre>",var_dump($list),"</pre>";
 
 
@@ -23,7 +23,7 @@ $list = $variables['list'];
           <?= $list['content']?>
 
 
-            <? render_template('template/bottom-block', compact('custom_fields', 'child_page', 'list')); ?>
+            <? render_template('template/bottom-block', compact('custom_fields', 'child_page', 'list', 'name_pril')); ?>
 
 
             <div class="block-left">
