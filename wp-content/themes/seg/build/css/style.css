@@ -421,20 +421,34 @@ template {
   width: 38px;
   height: 198px;
   top: 18vh;
-  left: 28.5vw;
   z-index: 10; }
+  @media (min-width: 320px) {
+    .contacts-icons {
+      left: 8.5vw; } }
+  @media (min-width: 1005px) {
+    .contacts-icons {
+      left: 10vw; } }
+  @media (min-width: 1195px) {
+    .contacts-icons {
+      left: 16vw; } }
+  @media (min-width: 1270px) {
+    .contacts-icons {
+      left: 17.5px; } }
+  @media (min-width: 1320px) {
+    .contacts-icons {
+      left: 19.5vw; } }
+  @media (min-width: 1430px) {
+    .contacts-icons {
+      left: 21.5vw; } }
+  @media (min-width: 1599px) {
+    .contacts-icons {
+      left: 24.5vw; } }
+  @media (min-width: 1900px) {
+    .contacts-icons {
+      left: 28.5vw; } }
   @media (min-width: 2000px) {
     .contacts-icons {
       left: 34vw; } }
-  @media (max-width: 1450px) {
-    .contacts-icons {
-      left: 21.5vw; } }
-  @media (max-width: 1025px) {
-    .contacts-icons {
-      left: 10.5vw; } }
-  @media (max-width: 769px) {
-    .contacts-icons {
-      left: 9.5vw; } }
 
 .list-icons-item {
   width: 38px;
