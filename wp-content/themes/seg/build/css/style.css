@@ -433,7 +433,7 @@ template {
       left: 16vw; } }
   @media (min-width: 1270px) {
     .contacts-icons {
-      left: 17.5px; } }
+      left: 17.5vw; } }
   @media (min-width: 1320px) {
     .contacts-icons {
       left: 19.5vw; } }
